@@ -133,20 +133,11 @@ const PROJECTS = [
 // Avatar SVG minimalista
 function Avatar() {
   return (
-    <svg role="img" aria-label="Avatar" viewBox="0 0 120 120" className="w-28 h-28 drop-shadow-sm">
-      <defs>
-        <linearGradient id="face" x1="0" x2="1">
-          <stop offset="0%" stopColor="#FFE6C9" />
-          <stop offset="100%" stopColor="#FFD3B6" />
-        </linearGradient>
-      </defs>
-      <circle cx="60" cy="60" r="58" fill="white" />
-      <circle cx="60" cy="48" r="22" fill="url(#face)" />
-      <rect x="26" y="72" width="68" height="34" rx="17" fill="#E5E7EB" />
-      <circle cx="50" cy="46" r="3" fill="#111827" />
-      <circle cx="70" cy="46" r="3" fill="#111827" />
-      <path d="M50 56 Q60 62 70 56" stroke="#111827" strokeWidth="2" fill="none" />
-    </svg>
+    <img
+      src="/avatar.jpg"
+      alt="Foto de Adriana Marcela Corona"
+      className="w-28 h-28 rounded-full object-cover drop-shadow-sm"
+    />
   );
 }
 
